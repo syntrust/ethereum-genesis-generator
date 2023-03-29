@@ -27,8 +27,8 @@ out = {
         "londonBlock":0,
         "mergeForkBlock":0,
         "terminalTotalDifficulty":0,
-        "shanghaiTime": int(data['genesis_timestamp']) + int(data['genesis_delay']) + (int(data['capella_fork_epoch']) * 32 * 12),
-        "shardingForkTime":  int(data['genesis_timestamp']) + int(data['genesis_delay']) + (int(data['deneb_fork_epoch']) * 32 * 12)
+        "shanghaiTime": int(data['genesis_timestamp']) + int(data['genesis_delay']) + (int(data['capella_fork_epoch']) * (int(data['slots_per_epoch']) * (int(data['seconds_per_slot'])),
+        "shardingForkTime":  int(data['genesis_timestamp']) + int(data['genesis_delay']) + (int(data['deneb_fork_epoch']) * (int(data['slots_per_epoch']) * (int(data['seconds_per_slot']))
     },
     "alloc": {
         # Allocate 1 wei to all possible pre-compiles.
